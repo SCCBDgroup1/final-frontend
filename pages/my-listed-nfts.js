@@ -46,7 +46,7 @@ export default function CreatorDashboard() {
   }
 
   if (loadingState === 'loaded' && !nfts.length) {
-    return (<h1 className="py-10 px-20 text-3xl">No NFTs listed</h1>)
+    return (<h1 className="py-10 px-20 text-3xl">No Tickets listed</h1>)
   } else {
     return (
       <div>

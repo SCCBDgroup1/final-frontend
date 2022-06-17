@@ -81,17 +81,17 @@ export default function CreateItem() {
     <div className="flex justify-center">
       <div className="w-1/2 flex flex-col pb-12">
         <input 
-          placeholder="Identificador de la entrada"
+          placeholder="Ticket Name"
           className="mt-8 border rounded p-4"
           onChange={e => updateFormInput({ ...formInput, name: e.target.value })}
         />
         <textarea
-          placeholder="Descripción de la entrada"
+          placeholder="Ticket Description"
           className="mt-2 border rounded p-4"
           onChange={e => updateFormInput({ ...formInput, description: e.target.value })}
         />
         <input
-          placeholder="Precio de la entrada en Eth"
+          placeholder="Ticket Price in Eth"
           className="mt-2 border rounded p-4"
           onChange={e => updateFormInput({ ...formInput, price: e.target.value })}
         />
@@ -107,7 +107,7 @@ export default function CreateItem() {
           )
         }
         <button onClick={listNFTForSale} className="font-bold mt-4 bg-teal-400 text-white rounded p-4 shadow-lg">
-          Colgar
+          Mint and list Ticket
         </button>
       </div>
     </div>
