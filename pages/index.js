@@ -58,7 +58,7 @@ export default function Home() {
   }
 
   if (loadingState === 'loaded' && !nfts.length) {
-    return (<h1 className="px-20 py-10 text-3xl">¡No hay entradas disponibles!</h1>)
+    return (<h1 className="px-20 py-10 text-3xl">¡No tickets available!</h1>)
   } else {
     return (
       <div className="flex justify-center">
